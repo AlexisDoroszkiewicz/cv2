@@ -1,0 +1,159 @@
+:root {
+  --mainFont: "Patrick Hand", cursive;
+  --titleFont: ff-prater-block-web, sans-serif;
+
+  --primaryBlue: hsl(214, 100%, 50%);
+  --darkBlue: hsl(214, 100%, 30%);
+  --lightBlue: hsl(214, 100%, 70%);
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+}
+
+body * {
+  box-sizing: border-box;
+  color: var(--primaryBlue);
+  font-family: var(--mainFont);
+  font-size: 3.815rem;
+  margin: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  body * {
+    font-size: 3.052rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  body * {
+    font-size: 2.441rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  body * {
+    font-size: 1.953rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  body * {
+    font-size: 1.563rem;
+  }
+}
+
+.introContainer {
+  height: 100vh;
+  overflow-y: scroll;
+  display: flex;
+  scroll-snap-type: y mandatory;
+  scroll-snap-stop: always;
+  scroll-behavior: smooth;
+}
+
+.introLeft {
+  width: 45%;
+  height: 400vh;
+  display: flex;
+}
+.introRight {
+  width: 55%;
+}
+
+.introRight div > * {
+  position: relative;
+  top: 25vh;
+}
+
+.introRight div {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+#trigger1 {
+  display: none;
+}
+
+#trigger1:not(:checked) ~ div label .stickman {
+  transform: rotate(45deg) translate(-50%);
+}
+
+#trigger1:checked ~ div label {
+  pointer-events: none;
+}
+
+#trigger1:checked ~ div label .stickman {
+  transform: translate(25vw) rotate(0deg);
+  transition: 2s transform;
+}
+
+#trigger1:checked ~ div label .hey,
+#trigger1:checked ~ div label .clickOnMe {
+  opacity: 0;
+  transition: 500ms opacity;
+}
+
+#trigger1:checked ~ div .speach .hi {
+  animation: inOut 2500ms 1s;
+}
+
+#trigger1:checked ~ div .speach .im {
+  opacity: 1;
+  transition: 1s 1500ms opacity;
+}
+
+@keyframes inOut {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.stickman {
+  height: 6em;
+  position: sticky;
+  top: 35vh;
+}
+
+.hey,
+.clickOnMe {
+  position: relative;
+  left: 40%;
+  top: 1em;
+  margin: 1em 0;
+  white-space: nowrap;
+  transform: translate(50%, 50%);
+}
+
+.clickOnMe {
+  font-size: 0.8em;
+}
+
+.speach {
+  text-align: end;
+  align-self: flex-start;
+  position: sticky;
+  top: 25vh;
+  width: 80%;
+  padding-right: 1em;
+}
+
+.hi,
+.im {
+  opacity: 0;
+}
+
+.introName p {
+  font-family: var(--titleFont);
+}
+
+.trainings {
+  height: 100vh;
+}
