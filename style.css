@@ -3,8 +3,8 @@
   --titleFont: ff-prater-block-web, sans-serif;
 
   --primaryBlue: hsl(214, 100%, 50%);
-  --darkBlue: hsl(214, 100%, 30%);
-  --lightBlue: hsl(214, 100%, 70%);
+  --darkBlue: hsl(214, 100%, 45%);
+  --lightBlue: hsl(214, 100%, 60%);
 }
 
 body,
@@ -61,21 +61,40 @@ body * {
   position: absolute;
   top: 0;
   left: 0;
-  height: calc(330vh + 1.3em);
+  height: 400vh;
   width: 45%;
 }
 
+.hi {
+  position: relative;
+  top: 30vh;
+  text-align: center;
+}
+
 .im {
-  padding-right: 1em;
+  padding-right: 0.5em;
   position: sticky;
   top: 30vh;
   text-align: right;
+}
+
+.stickman {
+  height: 6em;
+  position: sticky;
+  top: 35vh;
 }
 
 .intro * {
   position: relative;
   left: 45%;
   top: 30vh;
+  width: 50%;
+}
+
+h1,
+h2 {
+  font-family: var(--titleFont);
+  color: black;
 }
 
 h2 {
