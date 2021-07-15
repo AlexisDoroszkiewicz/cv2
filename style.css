@@ -39,13 +39,17 @@ body * {
 
 .container {
   max-height: 100vh;
-  overflow-y: scroll;
+  overflow-y: hidden;
   overflow-x: hidden;
   scroll-snap-type: y mandatory;
   scroll-snap-stop: always;
   position: relative;
   -ms-overflow-style: none; /* for Internet Explorer, Edge */
   scrollbar-width: none; /* for Firefox */
+}
+
+#trigger1:checked ~ .container {
+  overflow-y: scroll;
 }
 
 .container::-webkit-scrollbar {
@@ -57,18 +61,70 @@ body * {
   scroll-snap-align: start;
 }
 
+#trigger1 {
+  display: none;
+}
+
+#trigger1:checked ~ div label {
+  pointer-events: none;
+}
+
 .introAbsolute {
   position: absolute;
   top: 0;
   left: 0;
-  height: 400vh;
   width: 45%;
+}
+
+.introAbsoluteSpeach {
+  height: calc(330vh + 1.35em);
+}
+
+.introAbsoluteStick {
+  height: 400vh;
+}
+
+.attention {
+  position: relative;
+  top: 2em;
+  left: 3em;
+  font-style: italic;
+}
+
+#trigger1:checked ~ div label .attention {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.clickOnMe {
+  font-size: 0.8em;
 }
 
 .hi {
   position: relative;
   top: 30vh;
-  text-align: center;
+  text-align: right;
+  transform: translateX(-30%);
+  opacity: 0;
+}
+
+#trigger1:checked ~ div .hi {
+  animation: fadeInOut 2s 1s;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .im {
@@ -76,19 +132,60 @@ body * {
   position: sticky;
   top: 30vh;
   text-align: right;
+  opacity: 0;
+}
+
+#trigger1:checked ~ div .im {
+  opacity: 1;
+  transition: opacity 1s 1.5s;
 }
 
 .stickman {
   height: 6em;
   position: sticky;
-  top: 35vh;
+  top: 40vh;
 }
 
-.intro * {
+#trigger1:not(:checked) ~ div label .stickman {
+  transform: rotate(45deg) translate(-50%);
+}
+
+#trigger1:checked ~ div label .stickman {
+  transform: translate(25vw);
+  transition: transform 2s;
+}
+
+.intro > * {
   position: relative;
   left: 45%;
   top: 30vh;
   width: 50%;
+}
+
+.introName * {
+  transform: translate(100vw);
+}
+
+#trigger1:checked ~ div .introName h1 {
+  transform: translate(0);
+  transition: transform 1s 2s;
+}
+
+#trigger1:checked ~ div .introName p {
+  transform: translate(0);
+  transition: transform 1s 3s;
+}
+
+.introName p {
+  font-size: 0.8em;
+  padding-top: 2em;
+}
+
+.introLFG,
+.trainings,
+.experiences,
+.skills {
+  border-bottom: 8px dashed var(--lightBlue);
 }
 
 h1,
@@ -100,5 +197,4 @@ h2 {
 h2 {
   text-align: center;
   padding-top: 1em;
-  border-top: 2px dashed var(--lightBlue);
 }
