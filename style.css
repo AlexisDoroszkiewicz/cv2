@@ -7,16 +7,13 @@
   --lightBlue: hsl(214, 100%, 70%);
 }
 
-body {
-  margin: 0;
-}
-
+body,
 body * {
-  box-sizing: border-box;
-  color: var(--primaryBlue);
-  font-family: var(--mainFont);
-  font-size: 3.815rem;
   margin: 0;
+  font-family: var(--mainFont);
+  color: var(--primaryBlue);
+  font-size: 3.815rem;
+  box-sizing: border-box;
 }
 
 @media screen and (max-width: 1200px) {
@@ -38,4 +35,15 @@ body * {
   body * {
     font-size: 1.563rem;
   }
+}
+
+.container {
+  max-height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-snap-stop: always;
+}
+.snap {
+  height: 100vh;
+  scroll-snap-align: start;
 }
