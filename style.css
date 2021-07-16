@@ -150,6 +150,13 @@ body * {
   transition: transform 2s;
 }
 
+@media screen and (max-width: 1500px) {
+  #trigger1:checked ~ div label .stickman {
+    transform: translate(20vw);
+    transition: transform 2s;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   #trigger1:checked ~ div label .stickman {
     transform: translate(15vw);
@@ -249,6 +256,13 @@ body * {
   top: 40vh;
   transform: translate(25vw);
   transition: transform 2s;
+}
+@media screen and (max-width: 1500px) {
+  .lamp,
+  .motiv,
+  .XP {
+    transform: translate(20vw);
+  }
 }
 
 @media screen and (max-width: 1200px) {
