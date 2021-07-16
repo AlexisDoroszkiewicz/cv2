@@ -22,7 +22,7 @@
         <p class="im">I'm</p>
       </div>
       <div class="introAbsolute introAbsoluteStick">
-        <label for="trigger1">
+        <label class="label1" for="trigger1">
           <div class="attention">
             <p class="psst">Hey, pssst !</p>
             <p class="clickOnMe">Click on me !</p>
@@ -35,11 +35,11 @@
         <p>Junior front-end developer</p>
       </section>
       <div class="arrow">&lt;--</div>
-      <section class="snap intro introQuality1"><p>a fast learner</p></section>
-      <section class="snap intro introQuality2"><p>MOTIVATED !!!</p></section>
-      <section class="snap intro introLFG">
+      <div class="snap intro introQuality1"><p>a fast learner</p></div>
+      <div class="snap intro introQuality2"><p>MOTIVATED !!!</p></div>
+      <div class="snap intro introLFG">
         <p>looking for my first<br />web development experience</p>
-      </section>
+      </div>
       <section class="snap trainings">
         <h2>Trainings</h2>
         <div class="trainingsWrap">
@@ -61,10 +61,7 @@
             <div class="training training6">
               <div>
                 <p class="diploma">POEC front-end <br />web development</p>
-                <p class="where">
-                  La MANU,<br />
-                  Versailles 78<br />3 months
-                </p>
+                <p class="where">La MANU, Versailles 78<br />3 months</p>
               </div>
               <p class="year">2021</p>
             </div>
@@ -104,12 +101,96 @@
       </section>
       <section class="snap experiences">
         <h2>Experiences</h2>
+        <!-- <div class="sliderContainer">
+          <input type="checkbox" name="3d" id="trigger3d1" />
+          <input type="checkbox" name="3d" id="trigger3d2" />
+          <input type="checkbox" name="3d" id="trigger3d3" />
+
+          <label class="slide slide1" for="trigger3d1">
+            <div class="card">
+              <div class="yearExp">2015 - 2017</div>
+              <div class="exp">Education Assistant</div>
+              <div class="whereExp">Lycée Roger Verlomme, Paris 15</div>
+            </div>
+          </label>
+          <label class="slide slide2" for="trigger3d2">
+            <div class="card">
+              <div class="yearExp">2013</div>
+              <div class="exp">Merchandising Internship</div>
+              <div class="whereExp">Monoprix, Saint-Cloud 92</div>
+            </div>
+          </label>
+          <label class="slide slide3" for="trigger3d3">
+            <div class="card">
+              <div class="yearExp">2012</div>
+              <div class="exp">Sales Internship</div>
+              <div class="whereExp">Darty, Boulogne 92</div>
+            </div>
+          </label>
+        </div> -->
       </section>
       <section class="snap skills">
         <h2>Skills</h2>
       </section>
       <section class="snap contact">
         <h2>Contact</h2>
+        <form>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              id="exampleFormControlInput1"
+            />
+
+            <label
+              class="form-control-placeholder"
+              for="exampleFormControlInput1"
+              >Name</label
+            >
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput2"
+            />
+
+            <label
+              class="form-control-placeholder"
+              for="exampleFormControlInput2"
+              >E-mail</label
+            >
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              id="exampleFormControlInput3"
+            />
+
+            <label
+              class="form-control-placeholder"
+              for="exampleFormControlInput3"
+              >Topic</label
+            >
+          </div>
+
+          <div class="form-group">
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+            ></textarea>
+            <label
+              class="form-control-placeholder"
+              for="exampleFormControlTextarea1"
+              >Message</label
+            >
+            <div class="submit">
+              <a href="#">Submit</a>
+            </div>
+          </div>
+        </form>
       </section>
     </div>
   </body>
