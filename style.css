@@ -299,7 +299,8 @@ h2 {
 /* contact form ------------------------------------------- */
 
 form {
-  width: 60%;
+  width: 50%;
+  min-width: 300px;
   margin: auto;
 }
 
@@ -337,4 +338,13 @@ form * {
 
 .contact {
   position: relative;
+}
+
+footer {
+  border-top: 10px dashed white;
+  background: var(--primaryBlue);
+  height: 15vh;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
