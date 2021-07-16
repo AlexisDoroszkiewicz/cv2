@@ -232,10 +232,33 @@ body * {
   width: auto;
   height: auto;
   left: 0;
+  top: 35vh;
+  transform: translate(25vw);
+  transition: transform 2s;
+}
+
+.introQuality2 {
+  position: relative;
+}
+
+.introQuality2 p {
+  position: absolute;
+  top: 30vh;
+}
+
+.motiv {
+  position: sticky;
+  display: block;
+  max-width: 6em;
+  max-height: 6em;
+  width: auto;
+  height: auto;
+  left: 0;
   top: 40vh;
   transform: translate(25vw);
   transition: transform 2s;
 }
+
 .introLFG {
   position: relative;
 }
