@@ -204,7 +204,7 @@ body * {
   animation: arrowIdle 2s infinite;
   opacity: 0;
   font-family: var(--titleFont);
-  z-index: -1;
+  z-index: 1;
 }
 
 #trigger1:checked ~ div .arrow {
@@ -441,6 +441,7 @@ footer {
   width: 100%;
   position: absolute;
   bottom: 0;
+  z-index: 2;
 }
 
 .trainings {
