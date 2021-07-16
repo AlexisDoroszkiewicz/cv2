@@ -156,6 +156,20 @@ body * {
   transition: transform 2s;
 }
 
+@media screen and (max-width: 1200px) {
+  #trigger1:checked ~ div label .stickman {
+    transform: translate(15vw);
+    transition: transform 2s;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #trigger1:checked ~ div label .stickman {
+    transform: translate(10vw);
+    transition: transform 2s;
+  }
+}
+
 .intro > * {
   position: relative;
   left: 45%;
@@ -215,59 +229,21 @@ body * {
     transform: rotate(-90deg) scale(0.9);
   }
 }
-.introQuality1 {
-  position: relative;
-}
-
-.introQuality1 p {
-  position: absolute;
-  top: 30vh;
-}
-
-.lamp {
-  position: sticky;
-  display: block;
-  max-width: 6em;
-  max-height: 6em;
-  width: auto;
-  height: auto;
-  left: 0;
-  top: 35vh;
-  transform: translate(25vw);
-  transition: transform 2s;
-}
-
-.introQuality2 {
-  position: relative;
-}
-
-.introQuality2 p {
-  position: absolute;
-  top: 30vh;
-}
-
-.motiv {
-  position: sticky;
-  display: block;
-  max-width: 6em;
-  max-height: 6em;
-  width: auto;
-  height: auto;
-  left: 0;
-  top: 40vh;
-  transform: translate(25vw);
-  transition: transform 2s;
-}
-
+.introQuality1,
+.introQuality2,
 .introLFG {
   position: relative;
 }
 
+.introQuality1 p,
+.introQuality2 p,
 .introLFG p {
   position: absolute;
   top: 30vh;
 }
 
+.lamp,
+.motiv,
 .XP {
   position: sticky;
   display: block;
@@ -279,6 +255,26 @@ body * {
   top: 40vh;
   transform: translate(25vw);
   transition: transform 2s;
+}
+
+@media screen and (max-width: 1200px) {
+  .lamp,
+  .motiv,
+  .XP {
+    transform: translate(15vw);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .lamp,
+  .motiv,
+  .XP {
+    transform: translate(10vw);
+  }
+}
+
+.lamp {
+  top: 35vh;
 }
 
 h1,
