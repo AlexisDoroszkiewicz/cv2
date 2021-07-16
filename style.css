@@ -448,7 +448,7 @@ footer {
 
 footer * {
   color: white;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 .trainings {
@@ -459,12 +459,13 @@ footer * {
 
 .skills {
   background-image: url(img/paper2.png);
+  background-attachment: fixed;
 }
 
 .footerWrap {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   gap: 1em;
 }
 
