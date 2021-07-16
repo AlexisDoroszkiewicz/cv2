@@ -175,7 +175,6 @@ body * {
   position: relative;
   left: 45%;
   top: 30vh;
-  width: 50%;
 }
 
 .introName * {
@@ -550,6 +549,7 @@ footer img {
 .progress {
   height: 0.5em;
   background: var(--lightBlue);
+  box-shadow: inset 6px 6px 6px var(--darkBlue);
 }
 
 .percent {
