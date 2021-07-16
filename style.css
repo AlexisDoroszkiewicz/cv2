@@ -201,7 +201,7 @@ body * {
 .trainings,
 .experiences,
 .skills {
-  border-bottom: 8px dashed var(--lightBlue);
+  border-bottom: 10px dashed var(--lightBlue);
 }
 
 .arrow {
