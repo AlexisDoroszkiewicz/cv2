@@ -215,7 +215,27 @@ body * {
     transform: rotate(-90deg) scale(0.9);
   }
 }
+.introQuality1 {
+  position: relative;
+}
 
+.introQuality1 p {
+  position: absolute;
+  top: 30vh;
+}
+
+.lamp {
+  position: sticky;
+  display: block;
+  max-width: 6em;
+  max-height: 6em;
+  width: auto;
+  height: auto;
+  left: 0;
+  top: 40vh;
+  transform: translate(25vw);
+  transition: transform 2s;
+}
 .introLFG {
   position: relative;
 }
