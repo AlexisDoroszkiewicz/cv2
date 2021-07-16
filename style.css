@@ -432,6 +432,8 @@ form * {
   opacity: 0.5;
 }
 
+/* boooya *_* */
+
 .form-control:focus + .form-control-placeholder,
 .form-control:not(:placeholder-shown) + .form-control-placeholder {
   font-size: 50%;
@@ -509,4 +511,18 @@ footer img {
   display: flex;
   align-items: center;
   gap: 1em;
+}
+
+/* SKILLS ------------------------------------------ */
+
+.skillsContainer {
+  display: grid;
+  place-items: center;
+}
+
+.skillLogo {
+  max-height: 1.2em;
+  max-width: 1.2em;
+  width: auto;
+  height: auto;
 }
