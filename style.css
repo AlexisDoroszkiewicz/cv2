@@ -209,7 +209,7 @@ body * {
   left: 85%;
   animation: arrowIdle 2s infinite;
   opacity: 0;
-  font-family: var(--titleFont);
+  font-family: var(--titleAltFont);
   z-index: 1;
 }
 
