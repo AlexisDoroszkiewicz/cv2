@@ -299,6 +299,7 @@ h2 {
   font-size: 0.5em;
   font-family: var(--titleAltFont);
   color: var(--darkBlue);
+  padding-bottom: 0.4em;
 }
 
 .where {
@@ -449,13 +450,13 @@ footer {
 }
 
 .trainings {
-  background-image: url(img/paper.jpg);
+  background-image: url(img/paper.png);
   background-size: cover;
   background-attachment: fixed;
 }
 
 .skills {
-  background-image: url(img/paper2.jpg);
+  background-image: url(img/paper2.png);
   background-size: cover;
   background-attachment: fixed;
 }
