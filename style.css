@@ -216,6 +216,28 @@ body * {
   }
 }
 
+.introLFG {
+  position: relative;
+}
+
+.introLFG p {
+  position: absolute;
+  top: 30vh;
+}
+
+.XP {
+  position: sticky;
+  display: block;
+  max-width: 6em;
+  max-height: 6em;
+  width: auto;
+  height: auto;
+  left: 0;
+  top: 40vh;
+  transform: translate(25vw);
+  transition: transform 2s;
+}
+
 h1,
 h2 {
   font-family: var(--titleFont);
@@ -230,14 +252,15 @@ h2 {
 /* trainings -------------------------------- */
 
 .year {
-  font-family: var(--titleFont);
-  font-size: 0.6em;
+  font-family: var(--titleAltFont);
+  font-size: 0.8em;
 }
 
 .diploma {
   font-size: 0.5em;
   font-family: var(--titleAltFont);
   color: var(--darkBlue);
+  padding: 0.5em;
 }
 
 .where {
@@ -348,4 +371,16 @@ footer {
   width: 100%;
   position: absolute;
   bottom: 0;
+}
+
+.trainings {
+  background-image: url(img/paper.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.skills {
+  background-image: url(img/paper2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
