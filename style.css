@@ -408,7 +408,7 @@ h2 {
 /* contact form ------------------------------------------- */
 
 form {
-  width: 50%;
+  width: 40%;
   min-width: 300px;
   margin: auto;
 }
@@ -543,7 +543,7 @@ footer img {
 .bar {
   height: 0.5em;
   width: 95%;
-  background: white;
+  background: rgba(255, 255, 255, 0.2);
   border: var(--darkBlue) 1px solid;
   overflow: hidden;
   border-radius: 10px;
