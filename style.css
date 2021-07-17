@@ -610,6 +610,7 @@ footer img {
 
 .expCard p {
   text-align: center;
+  padding: 0.5em 0;
 }
 
 .expWrap {
@@ -622,6 +623,7 @@ footer img {
 .expCard {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   height: 100%;
   width: 100%;
   padding: 0 1em;
@@ -642,4 +644,15 @@ footer img {
 
 .expWhere {
   font-size: 0.6em;
+}
+
+@media screen and (max-width: 768px) {
+  .expWrap {
+    flex-direction: column;
+  }
+  .expCard:nth-of-type(1),
+  .expCard:nth-of-type(2) {
+    border-left: none;
+    border-bottom: 2px dashed var(--lightBlue);
+  }
 }
