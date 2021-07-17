@@ -387,7 +387,7 @@ h2 {
   margin-bottom: 0.3em;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .trainingsWrap {
     display: flex;
     margin-top: 0;
@@ -683,7 +683,7 @@ footer img {
   font-size: 0.6em;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .expWrap {
     flex-direction: column;
   }
