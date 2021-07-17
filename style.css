@@ -433,12 +433,12 @@ form * {
 
 .form-control {
   width: 100%;
-  margin: 12px 0;
+  margin: 14px 0;
 }
 
 .form-control-placeholder {
   position: absolute;
-  top: 0.4em;
+  top: 10px;
   left: 0;
   padding-left: 10px;
   transition: all 200ms;
