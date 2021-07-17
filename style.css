@@ -56,6 +56,10 @@ body * {
   scroll-snap-align: start;
 }
 
+.contact {
+  scroll-snap-align: end;
+}
+
 #trigger1 {
   display: none;
 }
