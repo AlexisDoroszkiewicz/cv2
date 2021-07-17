@@ -398,6 +398,7 @@ h2 {
   .trainingsTop,
   .trainingsBottom {
     flex-direction: column-reverse;
+    margin-bottom: 2em;
   }
 
   .trainingsTop {
