@@ -480,16 +480,16 @@ footer * {
   font-size: 1em;
 }
 
-.trainings {
+/* .trainings {
   background-image: url(img/paper.png);
   background-size: cover;
   background-attachment: fixed;
-}
+} */
 
-.skills {
+/* .skills {
   background-image: url(img/paper2.png);
   background-attachment: fixed;
-}
+} */
 
 .footerWrap {
   display: flex;
