@@ -71,6 +71,21 @@ body * {
   width: 45%;
 }
 
+.intro > * {
+  position: relative;
+  left: 45%;
+  top: 30vh;
+}
+
+@media screen and (max-width: 768px) {
+  .introAbsolute {
+    width: 40%;
+  }
+  .intro > * {
+    left: 40%;
+  }
+}
+
 .introAbsoluteSpeach {
   height: calc(330vh + 1.35em);
 }
@@ -169,12 +184,6 @@ body * {
     transform: translate(10vw);
     transition: transform 2s;
   }
-}
-
-.intro > * {
-  position: relative;
-  left: 45%;
-  top: 30vh;
 }
 
 .introName * {
