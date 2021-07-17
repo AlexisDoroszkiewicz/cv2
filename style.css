@@ -306,6 +306,21 @@ h2 {
 
 /* trainings -------------------------------- */
 
+.trainings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.trainings h2 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
 .year {
   font-family: var(--titleAltFont);
   font-size: 0.8em;
