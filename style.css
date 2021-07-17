@@ -370,6 +370,7 @@ h2 {
     display: flex;
     margin-top: 0;
     justify-content: center;
+    align-items: center;
   }
 
   .trainingsTop,
