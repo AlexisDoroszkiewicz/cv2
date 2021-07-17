@@ -285,8 +285,8 @@ body * {
 }
 
 h1 {
-  font-family: var(--titleFont);
-  color: black;
+  font-family: var(--titleAltFont);
+  color: var(--darkBlue);
 }
 
 h2 {
