@@ -64,7 +64,7 @@ body * {
 }
 
 .contact {
-  scroll-snap-align: end;
+  scroll-snap-align: center;
 }
 
 #trigger1 {
