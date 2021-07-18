@@ -32,6 +32,13 @@ body * {
     font-size: 1.953rem;
   }
 }
+
+@media screen and (max-height: 768px) {
+  body * {
+    font-size: 3.052rem;
+  }
+}
+
 @media screen and (max-width: 576px) {
   body * {
     font-size: 1.563rem;
@@ -169,9 +176,9 @@ body * {
   transition: transform 2s;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1700px) {
   #trigger1:checked ~ div label .stickman {
-    transform: translate(20vw);
+    transform: translate(15vw);
     transition: transform 2s;
   }
 }
@@ -269,11 +276,11 @@ body * {
   transform: translate(25vw);
   transition: transform 2s;
 }
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1700px) {
   .lamp,
   .motiv,
   .XP {
-    transform: translate(20vw);
+    transform: translate(15vw);
   }
 }
 
@@ -497,7 +504,7 @@ form * {
 footer {
   border-top: 10px dashed white;
   background: var(--primaryBlue);
-  height: 15vh;
+  height: 2.3em;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -509,17 +516,6 @@ footer * {
   color: white;
   font-size: 1em;
 }
-
-/* .trainings {
-  background-image: url(img/paper.png);
-  background-size: cover;
-  background-attachment: fixed;
-} */
-
-/* .skills {
-  background-image: url(img/paper2.png);
-  background-attachment: fixed;
-} */
 
 .footerWrap {
   display: flex;
@@ -607,6 +603,15 @@ footer img {
   font-family: var(--titleAltFont);
   display: block;
   font-size: 0.4em;
+}
+
+@media screen and (max-height: 768px) {
+  .skills > * {
+    font-size: 0.8em;
+  }
+  .percent {
+    font-size: 0.6em;
+  }
 }
 
 .html {
