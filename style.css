@@ -704,9 +704,3 @@ footer img {
     border-bottom: 2px dashed var(--lightBlue);
   }
 }
-
-@media screen and (max-width: 576px) {
-  .contact {
-    bottom: 20%;
-  }
-}
