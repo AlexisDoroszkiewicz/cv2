@@ -707,6 +707,6 @@ footer img {
 
 @media screen and (max-width: 576px) {
   .contact {
-    height: 80vh;
+    bottom: 20%;
   }
 }
