@@ -39,9 +39,16 @@ body * {
   }
 }
 
+
 @media screen and (max-width: 576px) {
   body * {
     font-size: 1.563rem;
+  }
+}
+
+@media screen and (max-height: 576px) {
+  body * {
+    font-size: 2.441rem;
   }
 }
 
@@ -612,6 +619,16 @@ footer img {
     font-size: 0.6em;
   }
 }
+
+@media screen and (max-height: 630px) {
+  .skills > * {
+    font-size: 0.5em;
+  }
+  .percent {
+    font-size: 0.6em;
+  }
+}
+
 
 .html {
   width: 80%;
